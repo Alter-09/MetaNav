@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c30f1f">
+  <title>MetaNav // Organizator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#dashboard" aria-label="Ir al dashboard">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span><strong>METANAV</strong><small>ORGANIZATOR</small></span>
+      </a>
+      <div class="topbar-actions">
+        <span class="date-stamp" id="date-stamp"></span>
+        <button class="icon-button" id="quick-focus" type="button" title="Iniciar foco" aria-label="Iniciar foco">◉</button>
+        <div class="avatar" aria-label="Perfil de usuario">EJ</div>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="side-label">NAVEGACIÓN</div>
+        <nav id="main-nav" aria-label="Navegación principal">
+          <a href="#dashboard" data-route="dashboard"><span>01</span> Dashboard</a>
+          <a href="#tasks" data-route="tasks"><span>02</span> Mis tareas</a>
+          <a href="#calendar" data-route="calendar"><span>03</span> Calendario</a>
+          <a href="#focus" data-route="focus"><span>04</span> Sala de foco</a>
+          <a href="#stats" data-route="stats"><span>05</span> Progreso</a>
+          <a href="#settings" data-route="settings"><span>06</span> Ajustes</a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="eyebrow">KIT PERSONAL</span>
+          <p>Haz espacio para lo importante. Una misión a la vez.</p>
+        </div>
+      </aside>
+
+      <main id="app" class="main-content" tabindex="-1"></main>
+    </div>
+    <footer class="footer"><span>METANAV / 2026</span><span id="footer-tip">La claridad empieza por escribir el siguiente paso.</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
